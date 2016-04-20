@@ -10,7 +10,7 @@
     <meta name="author" content="Tanya Powell">
     <meta name="viewport" content="width=device-width, initial-scale=2">
 
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="scss/main.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
 
@@ -32,34 +32,35 @@
 </head>
 
 <body>
-    <div class="background-image"></div>
-    <div id="banner">
-        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="http://placehold.it/50x25"></a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse navbar-menubuilder">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">About Us</a>
-                        </li>
-                        <li><a href="/contact">Contact Us</a>
-                        </li>
-                    </ul>
+        <div id="banner">
+          <div class="background-image">
+            <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="http://placehold.it/50x25"></a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-menubuilder">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">About Us</a>
+                            </li>
+                            <li><a href="/contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-          </div>
-
-            <h1>A Large G&T</h1>
-<h3>{Tagline - and make it snappy gurl}</h3>
-<div id="social">
-    <a href="https://twitter.com/A_Large_GT"><i class="fa fa-twitter fa-3x"></i></a>
-    <a href="https://soundcloud.com/large-gandt"><i class="fa fa-soundcloud fa-3x"></i></a>
-    <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
-    <a href="#"><i class="fa fa-snapchat-ghost fa-3x"></i></a>
-    <a href="#"><i class="fa fa-rss fa-3x" fa-3x></i></a>
+              <h1>A Large G&T</h1>
+  <h3>Two girls One podcast<br />Discussing Black British Culture</h3>
+  <div id="social">
+      <a href="https://twitter.com/A_Large_GT"><i class="fa fa-twitter fa-3x"></i></a>
+      <a href="https://soundcloud.com/large-gandt"><i class="fa fa-soundcloud fa-3x"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+      <a href="#"><i class="fa fa-snapchat-ghost fa-3x"></i></a>
+      <a href="#"><i class="fa fa-rss fa-3x" fa-3x></i></a>
+  </div>
+  <!-- End of drink image -->
 </div>
 
 <section id="about">
@@ -72,21 +73,25 @@
       <br>
     <div class="bio col-md-6 bio-block">
         <img src="http://placekitten.com/200/200" class="img-circle" alt="">
-        <h2>About Gillian</h2>
+        <h2><a href="#">About Gillian</a></h2>
         <p>Marshmallow carrot cake candy canes soufflé muffin sweet sweet. Pastry ice cream cupcake tootsie roll. Sweet roll pie fruitcake cupcake toffee marzipan brownie. Cotton candy sweet roll halvah wafer. Biscuit muffin cake ice cream gummi bears
         liquorice biscuit croissant wafer. Lemon drops cake bonbon cake gummies wafer marshmallow.</p>
+        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
     </div>
     <div class="bio col-md-6 bio-block">
-        <img src="http://placekitten.com/200/200" class="img-circle" alt="">
-        <h2>About Tanya</h2>
-        <p>Marshmallow carrot cake candy canes soufflé muffin sweet sweet. Pastry ice cream cupcake tootsie roll. Sweet roll pie fruitcake cupcake toffee marzipan brownie. Cotton candy sweet roll halvah wafer. Biscuit muffin cake ice cream gummi bears
-        liquorice biscuit croissant wafer. Lemon drops cake bonbon cake gummies wafer marshmallow.</p>
+        <img src="https://s3-eu-west-1.amazonaws.com/tanyapowell/6105146987_93f5537c01_m.jpg" class="img-circle" alt="">
+        <h2><a href="http://tanyapowell.co.uk">About Tanya</a></h2>
+        <p>Tanya is a Software Engineer by day and blogger/baker/photographer/diva by night. She is working one day at a time to encourage more women to join her in the technology industry.</p>
+        <p>She also has an unhealthy obsession with crisps and reality TV.</p>
+        <a href="https://twitter.com/tanya_powell"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
     </div>
-    <p id="blank">x</p>
+    <!-- <p id="blank">x</p> -->
 </section>
 
 <section id="contact">
-  <div class="block">
+  <!-- <div class="block"> -->
     <h1>Contact Us</h1>
     <p>We want to hear about the amazing things happening in Black Britain!</p>
     <p>Tell us about your great achievements, new business ventures, interesting things you've come across or anythiing you think we should be discussing</p>
@@ -108,12 +113,13 @@
         <input type="submit" value="Send">
     </form>
   </div>
-</div>
+<!-- </div> -->
 </section>
 
-<!-- <footer class="bottom">Made With <i class="fa fa-heart"></i> By <a href="http://tanyapowell.co.uk">Tanya Powell</a></footer>
- -->
+<footer class="bottom">Made With <i class="fa fa-heart"></i> By <a href="http://tanyapowell.co.uk">Tanya Powell</a></footer>
 
-            <div>
+
+        </div>
 </body>
+
 </html>

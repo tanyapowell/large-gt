@@ -1,0 +1,112 @@
+@import "../variables";
+
+$black_100: rgba(0, 0, 0, 1);
+$color_french_rose_approx: rgba(255, 77, 128, 1);
+$white_100: rgba(255, 255, 255, 1);
+$color_mine_shaft_approx: rgba(51, 51, 51, 1);
+$color_turquoise_blue_approx: rgba(96, 223, 229, 1);
+$color_fuscous_gray_approx: rgba(85, 85, 85, 1);
+
+.container-fluid {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#custom-bootstrap-menu.navbar-default {
+	font-size: 14px;
+  background: $black_100;
+	border-width: 0;
+	border-radius: 0;
+  margin: 0;
+	.navbar-brand {
+		color: $black_100;
+	}
+	.navbar-nav {
+		> li > a {
+			color: $white_100;
+			&:hover {
+				color: $color_mine_shaft_approx;
+				background-color: $color_turquoise_blue_approx;
+			}
+			&:focus {
+				color: $color_mine_shaft_approx;
+				background-color: $color_turquoise_blue_approx;
+			}
+		}
+		> .active > a {
+			color: $color_fuscous_gray_approx;
+			background-color: $color_turquoise_blue_approx;
+			&:hover {
+				color: $color_fuscous_gray_approx;
+				background-color: $color_turquoise_blue_approx;
+			}
+			&:focus {
+				color: $color_fuscous_gray_approx;
+				background-color: $color_turquoise_blue_approx;
+			}
+		}
+	}
+	.navbar-toggle {
+		border-color: $color_turquoise_blue_approx;
+		&:hover {
+			background-color: $color_turquoise_blue_approx;
+			.icon-bar {
+				background-color: $color_french_rose_approx;
+			}
+		}
+		&:focus {
+			background-color: $color_turquoise_blue_approx;
+			.icon-bar {
+				background-color: $color_french_rose_approx;
+			}
+		}
+		.icon-bar {
+			background-color: $color_turquoise_blue_approx;
+		}
+	}
+}
+
+#banner {
+  text-align: center;
+  color: #fff;
+  padding: 0;
+  // padding-bottom: 100px;
+}
+
+.background-image {
+  background-image: url('./../img/banner_img.jpg');
+  height: 450px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  // -webkit-filter: blur(12px);
+  // -moz-filter: blur(12px);
+  // -o-filter: blur(12px);
+  // -ms-filter: blur(12px);
+  // filter: blur(12px);
+}
+
+#banner h1 {
+  font-family: $title;
+  font-size: 400%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-shadow: 4px 0 0 #000
+}
+
+#banner h3 {
+  font-family: $body-font;
+  font-size: 250%;
+  padding-bottom: 1em;
+  text-shadow: 4px 0 0 #000
+}
+
+#social i {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+a {
+  background-color: $color_turquoise_blue_approx;
+}

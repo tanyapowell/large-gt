@@ -25,6 +25,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-/scss
-
 /node_modules
+
+_site/
+.sass-cache/
+.jekyll-metadata

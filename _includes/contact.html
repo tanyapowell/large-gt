@@ -1,0 +1,25 @@
+<section id="contact">
+  <!-- <div class="block"> -->
+    <h1>Contact Us</h1>
+    <p>We want to hear about the amazing things happening in Black Britain!</p>
+    <p>Tell us about your great achievements, new business ventures, interesting things you've come across or anythiing you think we should be discussing</p>
+    <p>If you'd like to sponsor our podcast we want to hear from you too</p>
+    <div id="form-container">
+    <form id="contact-form" action="https://formspree.io/gandt.pod@gmail.com" method="POST">
+        <label for="name-input">Name:</label>
+        <input id="name-input" type="text" name="name" placeholder="Laquisha Jones" required autocomplete="on">
+        <label for="email-input">Email:</label>
+        <input id="email_input" type="email" name="_replyto" placeholder="laquisha@jones.com" required autocomplete="on">
+        <div class="select-wrap">
+          <select name="enquiry-type">
+            <option value="I want to ask a question">I have a question</option>
+            <option value="I want a shout out">I want a shout out</option>
+            <option value="I want to sponsor the podcast">I want to sponsor the podcast</option>
+          </select>
+        </div>
+        <textarea name="comment" form="contact-form" placeholder="Enter text here..." required></textarea>
+        <input type="submit" value="Send">
+    </form>
+  </div>
+<!-- </div> -->
+</section>

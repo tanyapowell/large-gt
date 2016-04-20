@@ -1,0 +1,23 @@
+@import "variables";
+@import "./partials/typography.scss";
+@import "./partials/about.scss";
+@import "./partials/contact.scss";
+@import "./partials/footer.scss";
+@import "./partials/nav.scss";
+
+section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 5em;
+}
+
+.block {
+  background: rgba(0,0,0,0.2);
+  height: 320px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+body {
+    margin: 0 0px; /* bottom = footer height */
+}

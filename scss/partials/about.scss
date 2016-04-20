@@ -1,0 +1,43 @@
+@import "../variables";
+@import "./typography.scss";
+
+#about {
+  text-align: center;
+  background-image: url('./../img/graffiti.jpg');
+  color: $color2;
+  height: 1000px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#about h1, #about h2 {
+  font-family: $title;
+}
+
+#about p {
+  font-family: $body-font;
+}
+
+.bio {
+  padding-top: 1em;
+}
+
+.bio img {
+  width: 200px;
+  height: 200px;
+}
+
+.bio-block {
+  background: rgba(0,0,0,0.2);
+  height: 420px;
+  width: 35%;
+  border: 1px solid $color2;
+  // margin-left: 5px;
+  // margin-right: 5px;
+}
+
+#blank {
+  color: $color2;
+}
