@@ -1,0 +1,49 @@
+@import "../variables";
+
+#banner {
+  text-align: center;
+  color: #fff;
+  padding: 0;
+}
+
+.background-image {
+  background-image: url('./../img/banner_img.jpg');
+  background-blend-mode: overlay, darken;
+  background-color: $brown-overlay;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  // -webkit-filter: blur(12px);
+  // -moz-filter: blur(12px);
+  // -o-filter: blur(12px);
+  // -ms-filter: blur(12px);
+  // filter: blur(12px);
+}
+
+#banner h1 {
+  font-family: $title;
+  font-size: 400%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#banner h3 {
+  font-family: $body-font;
+  font-size: 250%;
+  padding-bottom: 1em;
+}
+
+#social {
+  padding-bottom: 3em;
+}
+
+#social i {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+// #social a:link {
+//   background-color: $color_turquoise_blue_approx;
+// }

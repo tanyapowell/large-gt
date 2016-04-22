@@ -4,22 +4,25 @@
     <p>We want to hear about the amazing things happening in Black Britain!</p>
     <p>Tell us about your great achievements, new business ventures, interesting things you've come across or anythiing you think we should be discussing</p>
     <p>If you'd like to sponsor our podcast we want to hear from you too</p>
-    <div id="form-container">
-    <form id="contact-form" action="https://formspree.io/gandt.pod@gmail.com" method="POST">
-        <label for="name-input">Name:</label>
-        <input id="name-input" type="text" name="name" placeholder="Laquisha Jones" required autocomplete="on">
-        <label for="email-input">Email:</label>
-        <input id="email_input" type="email" name="_replyto" placeholder="laquisha@jones.com" required autocomplete="on">
-        <div class="select-wrap">
-          <select name="enquiry-type">
-            <option value="I want to ask a question">I have a question</option>
-            <option value="I want a shout out">I want a shout out</option>
-            <option value="I want to sponsor the podcast">I want to sponsor the podcast</option>
-          </select>
-        </div>
-        <textarea name="comment" form="contact-form" placeholder="Enter text here..." required></textarea>
-        <input type="submit" value="Send">
+    <div id="form-group form-group-lg">
+    <form role="form" id="contact-form" action="https://formspree.io/gandt.pod@gmail.com" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Keisha Smith" required>
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="keisha@smith.com" required>
+      <label for="sel1">Select your type of query:</label>
+      <select class="form-control" id="sel1" required>
+        <option value="I want to ask a question">I have a question</option>
+        <option value="I want a shout out">I want a shout out</option>
+        <option value="I want to sponsor the podcast">I want to sponsor the podcast</option>
+        <option value="Other">Other</option>
+      </select>
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" id="comment" placeholder="Enter you message here" required></textarea>
+      <span class="help-block">Once you've submitted you'll hear from us within 48 hours</span>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
     </form>
   </div>
-<!-- </div> -->
 </section>

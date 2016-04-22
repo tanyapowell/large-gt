@@ -4,6 +4,7 @@
 @import "./partials/contact.scss";
 @import "./partials/footer.scss";
 @import "./partials/nav.scss";
+@import "./partials/banner.scss";
 
 section {
   margin-top: 0;
@@ -11,13 +12,12 @@ section {
   padding: 5em;
 }
 
-.block {
-  background: rgba(0,0,0,0.2);
-  height: 320px;
-  padding-left: 12px;
-  padding-right: 12px;
+ a {
+  background-color: $color1;
+  text-decoration: none;
 }
 
-body {
-    margin: 0 0px; /* bottom = footer height */
+body a:hover {
+  color: $color_turquoise_blue_approx;
+  text-decoration: none;
 }
